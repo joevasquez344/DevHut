@@ -1,0 +1,62 @@
+.team {
+    margin: 0 20px;
+
+    &__header {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__day {
+        border-radius: 500px;
+        padding: 5px 60px;
+        border: 2px solid plum;
+        color: plum;
+        cursor: pointer;
+        transition: .05s linear;
+
+        &:hover {
+            background: plum;
+            color: white;
+        }
+    }
+
+    &__icon {
+        border: 1px solid #e7ebee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 15px;
+        transition: .05s linear;
+
+        &:hover {
+            background: #f4f4f4;
+        }
+    }
+
+    &__grid {
+        background: #f6f8fa;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    &__modal {
+        width: 20vw;
+    }
+
+    &__clockIn {
+        border-radius: 500px;
+        border: 1px solid plum;
+        background: white;
+        color: plum;
+        width: 100px;
+        margin-top: 15px;
+        padding: 5px;
+    }
+
+}

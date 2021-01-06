@@ -1,0 +1,18 @@
+.layout {
+    display: 'grid';
+    grid-template-areas: 
+    'sidebar navbar'
+    'sidebar cont'
+    ;
+
+}
+.grid-sidebar {
+    grid-area: sidebar;
+    grid: sidebar;
+}
+.grid-nav {
+    grid-area: navbar;
+}
+.grid-content {
+    grid-area: cont;
+}

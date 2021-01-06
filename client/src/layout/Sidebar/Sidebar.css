@@ -1,0 +1,29 @@
+.sidebar {
+  position: relative;
+  border-right: 1px solid #e7ebee;
+  width: 15vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  
+}
+.sidebar-item {
+  padding: 20px;
+  border-bottom: 1px solid #e7ebee;
+}
+.sidebar-item:hover {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+.sidebar-logout {
+  padding: 20px;
+  border-top: 1px solid #e7ebee;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.sidebar-logout:hover {
+  background: #f4f4f4;
+}
