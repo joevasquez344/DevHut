@@ -1,12 +1,13 @@
-import React from "react";
-import "./Sidebar.css";
-import { useHistory } from "react-router-dom";
-import PeopleOutlineIcon from "@material-ui/icons/PeopleOutline";
+import React from 'react';
+import './Sidebar.css';
+import {useHistory} from 'react-router-dom';
+import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 
 const Sidebar = () => {
   const history = useHistory();
   return (
     <div className="sidebar">
+      <h4  className='sidebar-brand'>DevHut</h4>
       <div className="sidebar-list">
         <div className="sidebar-item d-flex align-items-center justify-content-between">
           <span>Add Team</span>
@@ -14,7 +15,10 @@ const Sidebar = () => {
             <i className="fas fa-plus"></i>
           </span>
         </div>
-        <div onClick={() => history.push('/teams')} className="sidebar-item d-flex align-items-center justify-content-between">
+        <div
+          onClick={() => history.push('/teams')}
+          className="sidebar-item d-flex align-items-center justify-content-between"
+        >
           <span>Teams</span>
           <span>
             <PeopleOutlineIcon />

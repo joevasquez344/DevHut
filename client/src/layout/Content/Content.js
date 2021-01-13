@@ -27,11 +27,8 @@ class Content extends React.Component {
 
 const styles = {
   container: {
-    width: '85vw',
-    height: '100vh',
-    position: 'absolute',
-    right: 0,
-    fontWeight: 500,
+    fontWeight: '500',
+
   },
 };
 

@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import './Layout.css';
 
 import {Switch, Link, HashRouter, useHistory} from 'react-router-dom';
 
@@ -10,18 +11,21 @@ const Layout = (props) => {
   const history = useHistory();
 
   useEffect(() => {
-    history.push('/#/teams')
-  }, [])
+    // history.push('/#/teams')
+  }, []);
   return (
     <HashRouter>
       <div className="layout">
-        <Navbar {...props} />
-        <Sidebar />
-        <Content />
+        <div className="layout__left">
+          <Sidebar />
+        </div>
+        <div className="layout__right">
+          <Navbar {...props} />
+          <Content />
+        </div>
       </div>
     </HashRouter>
   );
 };
-
 
 export default Layout;

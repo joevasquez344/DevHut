@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PopoverItem = ({component: Component, text}) => {
+const PopoverItem = ({component: Component, text, ...rest}) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -34,7 +34,8 @@ const PopoverItem = ({component: Component, text}) => {
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
       >
-        <Component />
+        {/* <Component {...props} /> */}
+        <Component handlePopoverClose={handlePopoverClose} {...rest} />
       </Typography>
       <Popover
         id="mouse-over-popover"
@@ -60,5 +61,7 @@ const PopoverItem = ({component: Component, text}) => {
     </div>
   );
 };
+
+
 
 export default PopoverItem;

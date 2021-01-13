@@ -1,18 +1,21 @@
 .layout {
-    display: 'grid';
-    grid-template-areas: 
-    'sidebar navbar'
-    'sidebar cont'
-    ;
+  display:flex;
 
+}
+
+.layout__left {
+    width: 15vw;
+}
+
+.layout__right {
+    width: 85vw;
 }
 .grid-sidebar {
     grid-area: sidebar;
-    grid: sidebar;
 }
 .grid-nav {
     grid-area: navbar;
 }
 .grid-content {
     grid-area: cont;
-}
+}   

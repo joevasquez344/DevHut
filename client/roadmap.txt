@@ -1,0 +1,42 @@
+1. Create User
+    - username
+    - password
+
+    - name
+    - email
+    - phone number
+    - about
+    - experience
+
+2. Teams
+    
+    Create Team
+        - Team name
+        - Project name
+        - This user is set to be admin
+
+    Add Team Members Feature
+
+    Stand Up
+        - Explain what you are working on today
+        - Once you submit, you will be automatically clocked on
+        - show who is clocked on and who is not
+        - gain XP everytime you clock on
+
+    Daily Work
+        - Everything you work on/submit will be sent over to another app
+          feature that shows what each team member has worked on that day
+        - Overtime, you will be able to see your progress and team members progress for each day out of 
+          the development lifecycle
+        - gain xp everytime you complete a task
+
+    Roadmap
+        - Set deadlines for your team
+        - Admin/Project Manager only has access to create and modify this feature
+
+
+3. Social/Explore/Profile
+    - Create an experience in which you can search user profiles, interact/connect, see what they have worked on thru the app and what teams,
+    - Display overall XP and get verified based on a certain high amount of experience
+
+4. Notepad for yourself

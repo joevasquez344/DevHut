@@ -19,3 +19,16 @@
 //     );
 //   }
 // };
+
+import {letters} from './letters';
+
+export const setAvatar = (member) => {
+  if (member.avatar) {
+    return member.avatar;
+  } else if(member.avatar === null) {
+    const firstLetter = member.firstName.split('')[0].toUpperCase();
+    const match = letters.find((letter) => letter === firstLetter);
+
+    return match;
+  }
+};

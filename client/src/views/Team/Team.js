@@ -71,7 +71,7 @@ const Team = ({match}) => {
   return (
     <>
       <div className='team'>
-        <header className='team__header'>
+        {/* <header className='team__header'>
           <h1 className='team__brand'>Logo</h1>
           <div style={styles.middleNav}>
             <div className="team__day" style={styles.day}>
@@ -85,9 +85,9 @@ const Team = ({match}) => {
             <PopoverItem component={RoadmapIcon} text="Roadmap" />
             <PopoverItem component={TeamSettingsIcon} text="Team Settings" />
           </div>
-        </header>
+        </header> */}
         <div className='team__grid'>
-          <ClockedInList handleProfile={handleProfile} members={members} />
+          <ClockedInList  />
         </div>
       </div>
       <CustomModal

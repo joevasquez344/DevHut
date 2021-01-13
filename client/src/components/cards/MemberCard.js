@@ -1,15 +1,9 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
-
 import cardImage from '../../assets/images/team.jpg';
 
 const MemberCard = () => {
-
-    const history = useHistory();
-
-
   return (
-    <div  style={styles.card}>
+    <div style={styles.card}>
       <img style={styles.cardImage} src={cardImage} alt="" />
       <footer style={styles.cardFooter}>
         <h5 style={styles.teamName}>Team Name</h5>

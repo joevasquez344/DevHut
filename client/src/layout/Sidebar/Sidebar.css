@@ -1,16 +1,13 @@
 .sidebar {
-  position: relative;
   border-right: 1px solid #e7ebee;
-  width: 15vw;
   height: 100vh;
-  position: absolute;
-  left: 0;
   font-weight: 500;
-  
+  position: relative;
 }
 .sidebar-item {
   padding: 20px;
   border-bottom: 1px solid #e7ebee;
+
 }
 .sidebar-item:hover {
   background: #f4f4f4;
@@ -21,9 +18,17 @@
   border-top: 1px solid #e7ebee;
   position: absolute;
   bottom: 0;
-  width: 100%;
   cursor: pointer;
+  width: 100%;
 }
 .sidebar-logout:hover {
   background: #f4f4f4;
+}
+
+.sidebar-brand {
+  height:8vh;
+  border-bottom: 1px solid #e7ebee;
+  display:flex;
+  align-items: center;
+  padding: 0 20px;
 }
